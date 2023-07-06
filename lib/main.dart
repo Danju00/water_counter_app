@@ -12,15 +12,25 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Wata wata',
+      title: 'Water the COCO',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.black,
-        primaryColor: Color.fromARGB(255, 86, 245, 134),
+        primarySwatch: Colors.blue,
         textTheme: const TextTheme(
           headlineSmall:
               TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-          bodyMedium: TextStyle(color: Color.fromARGB(255, 137, 186, 243)),
+          bodyMedium: TextStyle(
+            color: Color.fromARGB(255, 137, 186, 243),
+          ),
+          bodySmall: TextStyle(
+              color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+              //backgroundColor: Colors.indigo,
+              //foregroundColor: Colors.white,
+              ),
         ),
         useMaterial3: true,
       ),
