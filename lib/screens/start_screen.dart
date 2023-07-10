@@ -1,19 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:water_counter_app/assets/interval_progress_bar.dart';
 
 class StartScreen extends StatefulWidget {
  const StartScreen({Key? key}) : super(key: key);
-
   @override
   State<StartScreen> createState() => _StartScreenState();
 }
-
 class  _StartScreenState extends State <StartScreen> {
-
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: Column(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -21,7 +17,6 @@ class  _StartScreenState extends State <StartScreen> {
         _totalMl(),
         _indicators(),
         _buttonReg(),
-
       ],
     ),
     backgroundColor: Colors.black, 
@@ -95,7 +90,6 @@ Widget _percentage(){
         );
             
 }
-
 Widget _smallDividier(){
   return const VerticalDivider(
     color: Color.fromARGB(255, 51, 51, 51),
@@ -104,13 +98,13 @@ Widget _smallDividier(){
     indent: 10,
     endIndent: 0,
   );
-
 }
-
 Widget _hydration(){
   return Column(
     children: [
-      _intervalBar(),
+
+      const IntervalProgressBar(),
+      //_intervalBar(),
       Text(
         'Hidratación',
         style: Theme.of(context).textTheme.bodySmall,
@@ -119,19 +113,21 @@ Widget _hydration(){
   );
 }
 
-Widget _intervalBar(){
-  return Text(
-              '1.0',
-              style: Theme.of(context).textTheme.headlineSmall,
-            );
+ //Widget _intervalBar(){
+  //return Text(
+    //          '1.0',
+    //          style: Theme.of(context).textTheme.headlineSmall,
+    //        );
 
 }
   Widget _buttonReg() {
-     return Center(
+      return Center(
           child: ElevatedButton(
             onPressed: () { },
-           child: const Text('Registrar'),
-           ), 
+            
+            child: const Text('Registrar'),
+            ), 
         );
   }
-}
+
+ 
