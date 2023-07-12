@@ -12,11 +12,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Water the COCO',
+      title: 'Wata Wata',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.black,
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.indigo,
+        appBarTheme: const AppBarTheme(
+          color: Colors.black,
+        ),
         textTheme: const TextTheme(
           headlineSmall:
               TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
