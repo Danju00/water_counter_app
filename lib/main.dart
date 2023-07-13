@@ -25,14 +25,19 @@ class MyApp extends StatelessWidget {
               TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           bodyMedium: TextStyle(
             color: Color.fromARGB(255, 137, 186, 243),
+            fontSize: 12,
+            fontWeight: FontWeight.bold,
           ),
           bodySmall: TextStyle(
               color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-              //backgroundColor: Colors.indigo,
+             //backgroundColor: Colors.indigo,
               //foregroundColor: Colors.white,
+              textStyle: const TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
               ),
         ),
         useMaterial3: true,
