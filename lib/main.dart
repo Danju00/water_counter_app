@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Wata Wata',
+      title: 'Awita UwU',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.black,
-        primarySwatch: Colors.indigo,
+        primaryColor: Colors.indigo,
         appBarTheme: const AppBarTheme(
           color: Colors.black,
         ),
@@ -24,25 +24,28 @@ class MyApp extends StatelessWidget {
           headlineSmall:
               TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           bodyMedium: TextStyle(
-            color: Color.fromARGB(255, 137, 186, 243),
+            color: Color.fromARGB(255, 76, 169, 248),
             fontSize: 12,
             fontWeight: FontWeight.bold,
           ),
           bodySmall: TextStyle(
-              color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+            color: Colors.white,
+            fontSize: 12,
+            fontWeight: FontWeight.bold
+            ),
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-             //backgroundColor: Colors.indigo,
-              //foregroundColor: Colors.white,
-              textStyle: const TextStyle(
-                fontWeight: FontWeight.bold,
-              ),
-              ),
+            //backgroundColor: const Color.fromARGB(255, 68, 154, 243),
+            //foregroundColor: Colors.white,
+            textStyle: const TextStyle(
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
         useMaterial3: true,
       ),
-      home: const StartScreen(),
+      home: const StartScreen(hidratacion: 0,valueWater: 0,),
     );
   }
 }
