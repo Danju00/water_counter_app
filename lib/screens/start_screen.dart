@@ -28,7 +28,7 @@ class _StartScreenState extends State<StartScreen> {
         toolbarHeight: 16.0,
         leadingWidth: 100,
         leading: Text(
-          'HI WATER',
+          'Awita UwU',
           style: Theme.of(context).textTheme.bodyMedium,
         ),
         actions: [
